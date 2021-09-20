@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClassExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-PE-osr">
+                                <rect key="frame" x="0.0" y="54" width="414" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="JL5-fJ-lL7"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="price 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Riz-wP-c8e">
+                                <rect key="frame" x="57" y="349" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8is-ni-Zu6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="price 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJP-tZ-E0W">
+                                <rect key="frame" x="57" y="403" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QfO-ox-QKK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYn-DX-vKz">
+                                <rect key="frame" x="107" y="586" width="200" height="41"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="mIi-7I-qC4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Total Prices ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalculateOnTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWD-jg-AnV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-lO-exP">
+                                <rect key="frame" x="107" y="477" width="200" height="29"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.71784813380000001" blue="0.90299008879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="jRJ-qu-q9g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eYn-DX-vKz" firstAttribute="top" secondItem="CfD-lO-exP" secondAttribute="bottom" constant="80" id="5Ub-AJ-TGg"/>
+                            <constraint firstItem="lpc-PE-osr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8e7-Z2-N9e"/>
+                            <constraint firstItem="Riz-wP-c8e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJx-gq-mVa"/>
+                            <constraint firstItem="CfD-lO-exP" firstAttribute="top" secondItem="qJP-tZ-E0W" secondAttribute="bottom" constant="40" id="Wfv-Eh-XIV"/>
+                            <constraint firstItem="CfD-lO-exP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fam-NS-ls9"/>
+                            <constraint firstItem="lpc-PE-osr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gTC-bu-dwa"/>
+                            <constraint firstItem="qJP-tZ-E0W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iJr-UY-B6f"/>
+                            <constraint firstItem="qJP-tZ-E0W" firstAttribute="top" secondItem="Riz-wP-c8e" secondAttribute="bottom" constant="20" id="lOd-td-LHH"/>
+                            <constraint firstItem="Riz-wP-c8e" firstAttribute="top" secondItem="lpc-PE-osr" secondAttribute="bottom" constant="40" id="s4g-W4-3KB"/>
+                            <constraint firstItem="lpc-PE-osr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xMq-aO-D5b"/>
+                            <constraint firstItem="eYn-DX-vKz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQY-ld-J69"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="CfD-lO-exP" id="dPA-5g-Yms"/>
+                        <outlet property="txtPrice1" destination="Riz-wP-c8e" id="0mw-ra-3QI"/>
+                        <outlet property="txtPrice2" destination="qJP-tZ-E0W" id="lye-zA-GkK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="275" height="183"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
